@@ -22,9 +22,12 @@ The lab faithfully reproduces the dynamics of a basic credential-based attack an
 
 ## Architecture
 
-![SSH Brute-Force Detection Lab Architecture](docs/architecture-diagram.png)
+![SSH Brute-Force Detection Lab Architecture](docs/architecture-diagram.png) 
 
 **Network:** All VMs reside on the same VMware NAT subnet (192.168.254.0/24) with static IP assignments for stability.
+
+
+
 ---
 
 ## Tech Stack
@@ -290,7 +293,8 @@ ssh-bruteforce-detection-splunk/
 ├── attack-files/
 │   └── metasploit-resource.rc
 └── docs/
-└── lab-setup-notes.md
+    └── lab-setup-notes.md
+    └── architecture-diagram.png
 ```
 
 ---
