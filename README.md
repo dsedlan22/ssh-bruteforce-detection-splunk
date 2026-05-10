@@ -259,6 +259,8 @@ Forwarder couldn't read /var/log/auth.log initially. The file is syslog:adm with
 
 Splunk warns about running as root now. I set up dedicated splunk and splunkfwd users for Enterprise and the Forwarder. Ten extra minutes, matches how you'd actually do it in production anyway.
 
+Overall, happy with how this turned out. Going through the whole loop, building the lab, running the attack, watching it land in Splunk, then writing the queries to actually find it. Honestly it gave me a much better feel for how brute-force and its detection work in practice. Reading about it isn't the same as seeing 1,664 failed logins stack up in real time.
+
 ---
 
 ## Future Improvements
